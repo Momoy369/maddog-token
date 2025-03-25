@@ -1,0 +1,14 @@
+[workspace]
+members = ["programs/*"]
+resolver = "2"
+
+[workspace.dependencies]
+anchor-lang = "0.31.0"
+anchor-spl = { version = "0.31.0", features = ["mint", "idl-build", "token", "associated_token"] }
+solana-program = "1.18.2"
+getrandom = { version = "0.2", features = ["js"] }
+
+[profile.release]
+overflow-checks = false
+lto = "fat"
+codegen-units = 1
