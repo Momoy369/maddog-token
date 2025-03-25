@@ -11,7 +11,7 @@ const connection = new Connection(
 
 // Mint address token yang ingin dicek
 const mintAddress = new PublicKey(
-  "7sJMBxsHHVLBD9C7hvBKQfB2gVWQy2hfmKh582gCKCZA"
+  "mntv2Hgsa3D8KhjPmQbCTefph17cJMuW4ZT1cGFg5FH"
 ); // Gantilah dengan mint address token kamu
 
 // Mendapatkan alamat metadata dari mint address
