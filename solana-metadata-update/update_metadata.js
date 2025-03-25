@@ -39,12 +39,13 @@ async function updateMetadata() {
     const metadata = await Metadata.load(connection, metadataAddress);
 
     // Data baru untuk metadata (misalnya, memperbarui URI atau atribut lainnya)
-    const newUri = "https://ms-stories.mspublishing.co.id/maddog.json";
+    const newUri =
+      "https://raw.githubusercontent.com/Momoy369/maddog-token/refs/heads/master/metadata.json";
     const newData = new MetadataDataData({
       name: "Maddog Token",
-      symbol: "$MDT",
+      symbol: "MDT",
       uri: newUri,
-      sellerFeeBasisPoints: 500, // 5% royalty
+      sellerFeeBasisPoints: 100, // 1% royalty
       creators: null, // bisa berisi array creator jika ada
     });
 
